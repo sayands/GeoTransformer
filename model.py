@@ -11,7 +11,7 @@ from geotransformer.modules.geotransformer import (
     SuperPointTargetGenerator,
     LocalGlobalRegistration,
 )
-from geotransformer.backbone import KPConvFPN
+from GeoTransformer.backbone import KPConvFPN
 
 class GeoTransformer(nn.Module):
     def __init__(self, cfg):
