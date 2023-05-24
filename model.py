@@ -154,6 +154,8 @@ class GeoTransformer(nn.Module):
 
             output_dict['ref_node_corr_indices'] = ref_node_corr_indices
             output_dict['src_node_corr_indices'] = src_node_corr_indices
+            
+            output_dict['superpoint_corr_scores'] = node_corr_scores
 
             # 7 Random select ground truth node correspondences during training
             if self.training:
